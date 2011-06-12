@@ -6,6 +6,9 @@ txt = #1b1b1b
 
 link = txt
 
+lgradient()
+  background linear-gradient(top, m235, m210)
+
 strong
   font-weight bold
 
@@ -80,7 +83,7 @@ body
               li
                 display block
                 float left
-                pad m*.5 - 2px m*1.5 - 2px
+                pad m*.5 - 1px m*1.5 - 2px
                 width 214px
                 box-sizing()
                 background linear-gradient(top, hsl(215,90,70), hsl(215,90,55) 50%, hsl(215,90,50) 50%, hsl(215,90,60))
@@ -132,24 +135,26 @@ body
           clearfix()
           color w75
           text-shadow #000 0 2px 0
+          bt 2px solid w15
           li
             width 213px
             box-sizing()
             float left
-            bt 2px solid w15
-            pad 1em
+            pad 1em 1.5em
             background linear-gradient(top, m40, m30)
             &:not(:first-of-type)
-              bl 2px solid m40
+              bl 2px solid w5
               
             p
               &.label
                 color w50
+                text-shadow none
+                mar 0 0 .25em
               &.data
-                font bold 200% sans
+                font bold 2em sans
 
       &.summary
-        background linear-gradient(top, m219, m194)
+        lgradient()
         bt 2px solid #fff
         pad 1em 1em 0
         fs 150%
@@ -158,7 +163,7 @@ body
 
       &.tips
         nav
-          background linear-gradient(top, m219, m194)
+          lgradient()
           height 3em
           ul
             li
@@ -208,13 +213,13 @@ body
         header
           font bold 150%/2 sans
           bt 2px solid #fff
-          background linear-gradient(top, m219, m194)
+          lgradient()
           bb 2px solid m50
           text-align center
 
         .content
           bt 2px solid #fff
-          background linear-gradient(top, m219, m194)
+          lgradient()
           .user
             clearfix()
             pad 2em c 3em
