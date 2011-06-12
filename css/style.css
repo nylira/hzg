@@ -291,7 +291,7 @@ body {
   width: 640px;
 }
 body #container {
-  height: 960px;
+  width: 640px;
   background: #1e1e1e;
 }
 body #container header.app {
