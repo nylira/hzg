@@ -288,11 +288,10 @@ body {
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
   background: #000;
+  width: 640px;
 }
 body #container {
   height: 960px;
-  width: 640px;
-  margin: 0 auto;
   background: #1e1e1e;
 }
 body #container header.app {
