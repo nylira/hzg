@@ -293,13 +293,9 @@ body #container {
   height: 960px;
   background: #1e1e1e;
 }
-body #container > *,
-body #container display none,
 body #container header.app {
   display: none;
 }
-body #container > * img,
-body #container display none img,
 body #container header.app img {
   vertical-align: top;
 }
