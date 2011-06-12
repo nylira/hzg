@@ -285,18 +285,21 @@ body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #1b1b1b;
   text-shadow: rgba(255,255,255,0.5) 0 2px 0;
-  overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
   background: #000;
-  width: 640px;
 }
 body #container {
   width: 640px;
+  height: 960px;
   background: #1e1e1e;
 }
+body #container > *,
+body #container display none,
 body #container header.app {
   display: none;
 }
+body #container > * img,
+body #container display none img,
 body #container header.app img {
   vertical-align: top;
 }

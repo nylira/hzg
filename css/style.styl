@@ -15,6 +15,7 @@ dfont()
   ff sans
   color txt
   text-shadow w50 0 2px 0
+  font-smoothing()
 
 a
   color link
@@ -24,14 +25,16 @@ a
 
 body
   dfont()
-  overflow-y scroll
-  font-smoothing()
   bg #000
-  width 640px
 
   #container
     width 640px
+    height 960px
     bg m30
+
+    > *
+    display none
+      
 
     header.app
       display none
