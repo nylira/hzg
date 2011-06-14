@@ -4,7 +4,7 @@
 m = 16px
 txt = #fff
 
-link = txt
+link = color hsl(215,100,60)
 
 strong
   font-weight bold
@@ -22,7 +22,7 @@ img
 a
   color link
   text-decoration none
-  &:hover
+  &:hover, &:visited
     color link
 
 bot = #000
@@ -33,7 +33,7 @@ html, body
 
 body
   dfont()
-  fs 150%
+  fs 162.5%
   bg #000
   width 640px
   overflow-x hidden
@@ -134,16 +134,15 @@ body
         
      
       &.stats
-        pad 0
         ul
           clearfix()
           li
             width 213px
             box-sizing()
             float left
-            pad m m*2
-            &:nth-of-type(2)
-              width 211px
+            pad m*2 m*2
+            &:not(:last-of-type)
+              br 2px solid bot
               
             p
               &.label
@@ -169,6 +168,12 @@ body
           clearfix()
           .name
             fw bold
+            color link
+          .since
+            color #999
+            span
+              fw bold
+              color txt
 
           img.avatar
             display block

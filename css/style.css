@@ -32,10 +32,10 @@ button:hover{cursor:pointer;background-color:#d9d9d9}
 .ie7 input[type="checkbox"],.iem7 input[type="checkbox"]{vertical-align:baseline}
 strong{font-weight:bold}
 img{vertical-align:top}
-a{color:#fff;text-decoration:none;}
-a:hover{color:#fff}
+a{color:color #38f;text-decoration:none;}
+a:hover,a:visited{color:color #38f}
 html,body{width:640px}
-body{font-size:16px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;font-size:150%;background:#000;width:640px;overflow-x:hidden;}
+body{font-size:16px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;font-size:162.5%;background:#000;width:640px;overflow-x:hidden;}
 body #container{width:640px;min-height:960px;background:#000;}
 body #container header.app{display:none;}
 body #container header.app img{vertical-align:#191919}
@@ -66,12 +66,11 @@ body #container section.menu.actions ul li.play a.play p.price .currency{color:r
 body #container section.banner{width:640px;height:320px;padding:0;background:#505050;}
 body #container section.banner img{display:none}
 body #container section.banner p{font:3em/320px "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;color:#646464}
-body #container section.stats{padding:0;}
 body #container section.stats ul{zoom:1;}
 body #container section.stats ul:before,body #container section.stats ul:after{content:"\0020";display:block;height:0;overflow:hidden}
 body #container section.stats ul:after{clear:both}
-body #container section.stats ul li{width:213px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;float:left;padding:16px 32px;}
-body #container section.stats ul li:nth-of-type(2){width:211px}
+body #container section.stats ul li{width:213px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;float:left;padding:32px 32px;}
+body #container section.stats ul li:not(:last-of-type){border-right:2px solid #000}
 body #container section.stats ul li p.label{color:rgba(255,255,255,0.5);margin:0 0 .25em}
 body #container section.stats ul li p.data{font-size:150%}
 body #container section.text ul.tips li.tip cite{color:#999;}
@@ -80,5 +79,7 @@ body #container section.text ul.tips li.tip cite span.author{color:#38f}
 body #container section.boss .content{padding:0 32px 64px;zoom:1;}
 body #container section.boss .content:before,body #container section.boss .content:after{content:"\0020";display:block;height:0;overflow:hidden}
 body #container section.boss .content:after{clear:both}
-body #container section.boss .content .name{font-weight:bold}
+body #container section.boss .content .name{font-weight:bold;color:color #38f}
+body #container section.boss .content .since{color:#999;}
+body #container section.boss .content .since span{font-weight:bold;color:#fff}
 body #container section.boss .content img.avatar{display:block;height:100px;width:100px;margin-right:32px;float:left}
