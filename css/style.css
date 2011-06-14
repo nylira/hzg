@@ -67,7 +67,7 @@ body #container section.menu.actions ul li.play a.play p.verb{float:left}
 body #container section.menu.actions ul li.play a.play p.price{float:right;}
 body #container section.menu.actions ul li.play a.play p.price .currency{color:rgba(255,255,255,0.6)}
 body #container section.banner{width:640px;height:320px;padding:0;margin:-2px 0;background:#505050;}
-body #container section.banner .img{background:url("../i/header.jpg") no-repeat;height:320px;width:640px;display:block;-webkit-box-shadow:inset #000 0 0 32px;-moz-box-shadow:inset #000 0 0 32px;-o-box-shadow:inset #000 0 0 32px;box-shadow:inset #000 0 0 32px}
+body #container section.banner .img{background:url("../i/header2.jpg") no-repeat;height:320px;width:640px;display:block;-webkit-box-shadow:inset #000 0 0 32px;-moz-box-shadow:inset #000 0 0 32px;-o-box-shadow:inset #000 0 0 32px;box-shadow:inset #000 0 0 32px}
 body #container section.summary{-webkit-box-shadow:rgba(0,0,0,0.25) 0 -16px 16px;-moz-box-shadow:rgba(0,0,0,0.25) 0 -16px 16px;-o-box-shadow:rgba(0,0,0,0.25) 0 -16px 16px;box-shadow:rgba(0,0,0,0.25) 0 -16px 16px;}
 body #container section.summary header{background:rgba(0,0,0,0.25);position:relative;top:2px;-webkit-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-moz-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-o-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-webkit-box-shadow:inset rgba(0,0,0,0.2) 0 0 32px;-moz-box-shadow:inset rgba(0,0,0,0.2) 0 0 32px;-o-box-shadow:inset rgba(0,0,0,0.2) 0 0 32px;box-shadow:inset rgba(0,0,0,0.2) 0 0 32px;}
 body #container section.summary header h1{float:left;font-weight:bold;color:#fff}
