@@ -17,6 +17,12 @@ dfont()
   font-smoothing()
   text-shadow #000 0 2px 0
 
+inset-border()
+  bt 2px solid b40
+  br 2px solid w10
+  bb 2px solid w20
+  bl 2px solid b20
+
 img
   vertical-align top
 
@@ -65,18 +71,29 @@ body
           fs 150%
         menu
           float right
+          mr m*2
           ul
             clearfix()
+            bg b30
+            box-shadow inset b50 0 0 m*.5
+            border-radius .5em
+            inset-border()
             li
               float left
+              &:not(:last-of-type)
+                br 2px solid b50
+              &:not(:first-of-type)
+                bl 2px solid w7
               a
                 box-sizing()
                 pad 0 m
                 width c
                 display block
                 font bold 150% sans
-                lh m*2.5
+                text-align center
+                lh m*2.35
                 height m*3
+                color #999
 
       .content
         pad 0 m*2 m*2
@@ -103,7 +120,7 @@ body
                 float right
                 mar m*.5 - 4px 0
                 square m*1.5
-                border 2px solid #fff
+                border 2px solid w50
                 &:after
                   content "\2713"
                   display block
@@ -152,12 +169,9 @@ body
             float right
             square m*4
             mr m*2
-            bt 2px solid b40
-            br 2px solid w10
-            bb 2px solid w20
-            bl 2px solid b20
             border-radius .5em
             position relative
+            inset-border()
             &:after
               content ""
               display block
@@ -211,17 +225,34 @@ body
       &.boss
         .content
           pad 0 m*2 m*4
-          clearfix()
-          p
-            pad 0
-          .since
-            color #999
-            span
-              fw bold
-              color txt
+          .user
+            bg b30
+            box-shadow inset b50 0 0 m*.5
+            border-radius .5em
+            inset-border()
+            clearfix()
+            pad m*2
+            
+            p
+              pad 0
+              lh 50px
+              a.name
+                fs 150%
+            
+              &.since
+                color #999
+                span
+                  fw bold
+                  color txt
 
-          img.avatar
-            display block
-            square 100px
-            mr m*2
-            float left
+            .avatar
+              display block
+              float left
+              square 100px
+              mr m*2
+              bg top
+              border-radius .3em
+              box-shadow b30 0 0 m
+              font bold 1.5em/100px sans
+              text-align center
+
