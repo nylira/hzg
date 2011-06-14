@@ -20,8 +20,7 @@ dfont()
 inset-border()
   bt 2px solid b40
   br 2px solid w10
-  bb 2px solid w15
-  bl 2px solid b20
+  bb 2px solid w10
 
 img
   vertical-align top
@@ -34,7 +33,8 @@ a
     color link
 
 bot = #000
-top = m25 url(../i/texture.jpg) 
+slate()
+  background m25 url(../i/texture.jpg)
 
 html, body
   width 640px
@@ -42,9 +42,8 @@ html, body
 body
   dfont()
   fs 162.5%
-  bg #000
+  bg bot
   width 640px
-  overflow-x hidden
 
   #container
     width 640px
@@ -57,7 +56,7 @@ body
         vertical-align top
 
     section
-      bg top
+      slate()
       mar 0 0 m*.5
       box-shadow inset b20 0 -24px m*2
       header
@@ -72,7 +71,7 @@ body
           mr m*2
           ul
             clearfix()
-            bg b30
+            background linear-gradient(top, b25, b35)
             box-shadow inset b50 0 0 m*.5
             border-radius .5em
             inset-border()
@@ -104,7 +103,7 @@ body
         box-shadow b35 0 16px m
         position relative
         z-index 100
-        bb 2px solid w10
+        bb 2px solid b20
         ul
           li
             display inline-block
@@ -113,7 +112,6 @@ body
             width 50%
             color hsl(215,80,45)
             fw bold
-            background linear-gradient(top, #fff, #f00)
 
             &.checkbox
               br 2px solid w7
@@ -236,6 +234,7 @@ body
           pad 0 m*2 m*4
           .user
             bg b30
+            background linear-gradient(top, b25, b35)
             box-shadow inset b50 0 0 m*.5
             border-radius .5em
             inset-border()
@@ -259,7 +258,7 @@ body
               float left
               square 100px
               mr m*2
-              bg top
+              slate()
               border-radius .3em
               box-shadow b30 0 0 m
               font bold 1.5em/100px sans
