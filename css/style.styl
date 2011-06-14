@@ -97,48 +97,7 @@ body
         p
           pad 0 0 m*2
 
-      &.actions
-        pad m*2
-        ul
-          li
-            display inline-block
-            pad m m*2
-            box-sizing()
-            width 50%
-            color hsl(215,80,45)
-            fw bold
-
-            &.checkbox
-              border-radius m 0 0 m
-              label
-                float left
-                color #fff
-
-              .checkbox
-                float right
-                mar m*.5 - 4px 0
-                square m*1.5
-                border 2px solid w50
-                &:after
-                  content "\2713"
-                  display block
-                  lh m*1.5
-                  color #fff
-                  width m*1.5
-                  text-align center
-            
-            &.play
-              border-radius 0 m m 0
-              a.play
-                pad m*.75 - 2px m*1.5 - 2px
-                p
-                  color #fff
-                  &.verb
-                    float left
-                  &.price
-                    float right
-                    .currency
-                      color w60
+      
       &.banner
         width 640px
         height 320px
@@ -152,7 +111,7 @@ body
           display block
           box-shadow inset #000 0 0 m*2
 
-      &.summary
+      &.main
         box-shadow b25 0 -16px m
         header
           bg b25
@@ -187,9 +146,57 @@ body
               mar 3px
               border-radius .4em
 
-        .content
-          pad m*2
-        
+        menu.actions
+          pad m
+          ul
+            border .2em solid b30
+            border-radius m*1.2
+            li
+              display inline-block
+              pad m m*2
+              box-sizing()
+              width 50%
+              color hsl(215,80,45)
+              text-shadow b30 0 2px 0
+              fw bold
+              background linear-gradient(top, hsl(218,90,50), hsl(218,90,35) 50%, hsl(218,90,30) 50%, hsl(218,90,40))
+
+              &.checkbox
+                border-radius m 0 0 m
+                br 2px solid w10
+                label
+                  float left
+                  color #fff
+
+                .checkbox
+                  float right
+                  mar m*.5 - 5px  0
+                  square m*2
+                  bg b30
+                  box-shadow inset b70 0 0 .3em
+                  border-radius .2em
+                  &:after
+                    content "\2713"
+                    display block
+                    lh m*2
+                    color #fff
+                    width m*2
+                    text-align center
+              
+              &.play
+                border-radius 0 m m 0
+                bl 2px solid b30
+                a.play
+                  pad m*.75 - 2px m*1.5 - 2px
+                  p
+                    color #fff
+                    &.verb
+                      float left
+                    &.price
+                      float right
+                      .currency
+                        color w60
+                        text-shadow none
      
       &.stats
         ul
@@ -207,9 +214,13 @@ body
               p
                 &.label
                   color #999
-                  mar 0 0 .25em
+                  mar 0 0 m*.5
+                  font bold 75%/1.5 sans
+                  text-transform uppercase
+                  letter-spacing 1px
                 &.data
-                  fs 150%
+                  fs 125%
+                  fw bold
 
 
       &.tips
