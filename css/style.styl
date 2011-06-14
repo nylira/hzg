@@ -4,7 +4,7 @@
 m = 16px
 txt = #fff
 
-link = color hsl(215,100,60)
+link = hsl(215,90,50)
 
 strong
   font-weight bold
@@ -15,6 +15,7 @@ dfont()
   ff sans
   color txt
   font-smoothing()
+  text-shadow #000 0 2px 0
 
 img
   vertical-align top
@@ -22,11 +23,13 @@ img
 a
   color link
   text-decoration none
+  fw bold
   &:hover, &:visited
     color link
 
 bot = #000
 top = m25
+top = m25 url(../i/texture.jpg) 
 
 html, body
   width 640px
@@ -52,6 +55,7 @@ body
       bb 2px solid bot
       bg top
       mar 0 0 m*.5
+      box-shadow inset b25 0 -10px m
       header
         pad m*2 0
         clearfix()
@@ -124,13 +128,28 @@ body
         width 640px
         height 320px
         pad 0
+        mar 0
         bg m80
-        img
-          display none
         p
+          display none
           font 3em/320px sans
           text-align center
           color m100
+
+      &.summary
+        header
+          bg b30
+          mt 2px
+          h1 
+            float left
+            fw bold
+          img
+            float right
+            square m*4
+            mr m*2
+
+        .content
+          pad m*2
         
      
       &.stats
@@ -151,7 +170,8 @@ body
               &.data
                 fs 150%
 
-      &.text
+      &.tips
+        pad 0 0 m*2
         ul.tips
           li.tip
             cite
@@ -166,9 +186,8 @@ body
         .content
           pad 0 m*2 m*4
           clearfix()
-          .name
-            fw bold
-            color link
+          p
+            pad 0
           .since
             color #999
             span
