@@ -4,7 +4,7 @@
 m = 16px
 txt = #fff
 
-link = hsl(215,90,50)
+link = hsl(218,100,53)
 
 strong
   font-weight bold
@@ -138,18 +138,44 @@ body
 
       &.summary
         header
-          bg b30
-          mt 2px
+          bg b25
+          position relative
+          top 2px
+          bb 2px solid b50
+          box-shadow b30 0 3px 10px
           h1 
             float left
             fw bold
-          img
+            color #fff
+
+          .icon
             float right
             square m*4
             mr m*2
+            bt 2px solid b40
+            br 2px solid w10
+            bb 2px solid w20
+            bl 2px solid b20
+            border-radius .5em
+            position relative
+            &:after
+              content ""
+              display block
+              square m*4
+              box-shadow inset #000 0 0 m
+              position absolute
+              top 0
+              left 0
+              border-radius .5em
+            .img
+              square 58px
+              background: url(i/icon_58x58.jpg) 
+              mar 3px
+              border-radius .4em
 
         .content
           pad m*2
+          bt 2px solid w10
         
      
       &.stats
