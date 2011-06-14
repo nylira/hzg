@@ -20,7 +20,7 @@ dfont()
 inset-border()
   bt 2px solid b40
   br 2px solid w10
-  bb 2px solid w20
+  bb 2px solid w15
   bl 2px solid b20
 
 img
@@ -34,7 +34,6 @@ a
     color link
 
 bot = #000
-top = m25
 top = m25 url(../i/texture.jpg) 
 
 html, body
@@ -61,7 +60,7 @@ body
       bb 2px solid bot
       bg top
       mar 0 0 m*.5
-      box-shadow inset b25 0 -10px m
+      box-shadow inset b20 0 -24px m*2
       header
         pad m*2 0
         clearfix()
@@ -81,9 +80,9 @@ body
             li
               float left
               &:not(:last-of-type)
-                br 2px solid b50
+                br 2px solid w7
               &:not(:first-of-type)
-                bl 2px solid w7
+                bl 2px solid b50
               a
                 box-sizing()
                 pad 0 m
@@ -158,8 +157,8 @@ body
           bg b25
           position relative
           top 2px
-          bb 2px solid b50
           box-shadow b30 0 3px 10px
+          box-shadow inset b20 0 0 m*2
           h1 
             float left
             fw bold
@@ -189,7 +188,6 @@ body
 
         .content
           pad m*2
-          bt 2px solid w10
         
      
       &.stats
@@ -199,16 +197,19 @@ body
             width 213px
             box-sizing()
             float left
-            pad m*2 m*2
             &:not(:last-of-type)
               br 2px solid bot
-              
-            p
-              &.label
-                color w50
-                mar 0 0 .25em
-              &.data
-                fs 150%
+              .stat
+                br 2px solid w7
+            .stat
+              pad m*2 m*2
+              p
+                &.label
+                  color #999
+                  mar 0 0 .25em
+                &.data
+                  fs 150%
+
 
       &.tips
         pad 0 0 m*2
