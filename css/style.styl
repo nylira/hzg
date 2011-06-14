@@ -2,12 +2,9 @@
 @import 'd/all'
 
 m = 16px
-txt = #1b1b1b
+txt = #fff
 
 link = txt
-
-lgradient()
-  background linear-gradient(top, m235, m210)
 
 strong
   font-weight bold
@@ -17,8 +14,10 @@ dfont()
   lh 1.5
   ff sans
   color txt
-  text-shadow w50 0 2px 0
   font-smoothing()
+
+img
+  vertical-align top
 
 a
   color link
@@ -26,19 +25,23 @@ a
   &:hover
     color link
 
+bot = #000
+top = m25
+
 html, body
   width 640px
 
 body
   dfont()
+  fs 150%
   bg #000
   width 640px
   overflow-x hidden
 
   #container
     width 640px
-    height 960px
-    bg m30
+    min-height 960px
+    bg bot
 
     header.app
       display none
@@ -46,196 +49,126 @@ body
         vertical-align top
 
     section
-      bb 2px solid m50
-    
-      &.header
-        background linear-gradient(top, #fff, m214)
-        position relative
-        background linear-gradient(top, m40, m30)
-
-        .icon
-          display table-cell
-          img
-            square 100px
-            display block
-            mar 1em
-            bg #fff
-            bg w10
-            box-shadow b60 0 0 1em
-            
-        .title
-          display table-cell
-          vertical-align top
-          width 100%
-          pad 1em 0
-
-          h1
-            font bold 200%/50px sans
-            color #fff
-            text-shadow #000 0 2px 0
-
-          menu.actions
-            position absolute
-            right 0
-            bottom 0
-            ul
-              float right
-              li
-                display block
-                float left
-                pad m*.5 - 1px m*1.5 - 2px
-                width 214px
+      bb 2px solid bot
+      bg top
+      mar 0 0 m*.5
+      header
+        pad m*2 0
+        clearfix()
+        h1
+          pl m*2
+          float left
+          fs 150%
+        menu
+          float right
+          ul
+            clearfix()
+            li
+              float left
+              a
                 box-sizing()
-                background linear-gradient(top, hsl(215,90,70), hsl(215,90,55) 50%, hsl(215,90,50) 50%, hsl(215,90,60))
-                border 2px solid hsl(215,90,40)
-                bb none
-                br none
-                box-shadow b15 0 0 1em
-                clearfix()
-                font bold 150%/1.5 sans
-                text-shadow b30 0 2px 0
+                pad 0 m
+                width c
+                display block
+                font bold 150% sans
+                lh m*2.5
+                height m*3
+      .content
+        pad 0 m*2 m*2
 
-                &.checkbox
-                  border-radius .5em 0 0 0
+      &.menu.actions
+        pad 0
+        ul
+          li
+            display inline-block
+            pad m m*2
+            box-sizing()
+            width 50%
+            color hsl(215,80,45)
+            fw bold
 
-                  label
+            &.checkbox
+              label
+                float left
+                color #fff
+
+              .checkbox
+                float right
+                mar m*.5 - 4px 0
+                square m*1.5
+                border 2px solid #fff
+                &:after
+                  content "\2713"
+                  display block
+                  lh m*1.5
+                  color #fff
+                  width m*1.5
+                  text-align center
+            
+            &.play
+              bl 1px solid bot
+              a.play
+                pad m*.75 - 2px m*1.5 - 2px
+                p
+                  color #fff
+                  &.verb
                     float left
-                    color #fff
-
-                  .checkbox
+                  &.price
                     float right
-                    border 2px solid b20
-                    mar m*.5 - 4px 0
-                    bg b40
-                    square m*1.5
-                    box-shadow inset b25 0 0 .2em
-                    border-radius 3px
-                    &:after
-                      content "\2713"
-                      display block
-                      lh m*1.5
-                      color #fff
-                      width m*1.5
-                      text-align center
-                
-                &.play
-                  a.play
-                    pad m*.75 - 2px m*1.5 - 2px
-                    p
-                      color #fff
-                      &.verb
-                        float left
-                      &.price
-                        float right
-                        .currency
-                          color w60
-                          text-shadow none
+                    .currency
+                      color w60
+      &.banner
+        width 640px
+        height 320px
+        pad 0
+        bg m80
+        img
+          display none
+        p
+          font 3em/320px sans
+          text-align center
+          color m100
+        
+     
       &.stats
+        pad 0
         ul
           clearfix()
-          color w75
-          text-shadow #000 0 2px 0
-          bt 2px solid w15
           li
             width 213px
             box-sizing()
             float left
-            pad 1em 1.5em
-            background linear-gradient(top, m40, m30)
-            &:not(:first-of-type)
-              bl 2px solid w5
+            pad m m*2
+            &:nth-of-type(2)
+              width 211px
               
             p
               &.label
                 color w50
-                text-shadow none
                 mar 0 0 .25em
               &.data
-                font bold 2em sans
+                fs 150%
 
-      &.summary
-        lgradient()
-        bt 2px solid #fff
-        pad 1em 1em 0
-        fs 150%
-        p
-          mar 0 0 1em
-
-      &.tips
-        nav
-          lgradient()
-          height 3em
-          ul
-            li
-              display inline-block
-              text-align center
-              box-sizing()
-              vertical-align top
-              &:not(:first-of-type)
-                bl 2px solid b30
-           
-              a
-                box-sizing()
-                width c - 2px
-                display block
-                bt 2px solid #fff
-                bs 2px solid w50
-                font bold 150% sans
-                lh m*2.5
-                height m*3
-
-              &.current a
-                width c*4
-                lh m*3 - 2px
-
-              &.new a
-                width c*2 - 3px
-
-          
+      &.text
         ul.tips
           li.tip
-            box-shadow inset #000 0 0 1em
-            color #ccc
-            text-shadow #000 0 2px 0
-            pad 2em c
-            .content
-              fs 150%
-            p.meta
-              fs 150%
+            cite
               color #999
               span
                 fw bold
                 color #ccc
                 &.author
                   color hsl(215,100,60)
+
       &.boss
-          
-        header
-          font bold 150%/2 sans
-          bt 2px solid #fff
-          lgradient()
-          bb 2px solid m50
-          text-align center
-
         .content
-          bt 2px solid #fff
-          lgradient()
-          .user
-            clearfix()
-            pad 2em c 3em
+          pad 0 m*2 m*4
+          clearfix()
+          .name
+            fw bold
 
-            .name
-              text-align center
-              font bold 200%/1.5 sans
-              mar 0 0 .5em
-
-            img.avatar
-              display block
-              mar 0 auto
-              square 100px
-              bg w50
-              mr 2em  mar 0 0 2em
-              pad 1em
-              border 2px solid w75
-              border-radius .5em
-              box-shadow b25 0 0 2em
+          img.avatar
+            display block
+            square 100px
+            mr m*2
+            float left
