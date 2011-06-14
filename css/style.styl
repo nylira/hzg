@@ -57,7 +57,6 @@ body
         vertical-align top
 
     section
-      bb 2px solid bot
       bg top
       mar 0 0 m*.5
       box-shadow inset b20 0 -24px m*2
@@ -101,6 +100,11 @@ body
 
       &.menu.actions
         pad 0
+        mar 0
+        box-shadow b35 0 16px m
+        position relative
+        z-index 100
+        bb 2px solid w10
         ul
           li
             display inline-block
@@ -111,6 +115,7 @@ body
             fw bold
 
             &.checkbox
+              br 2px solid w7
               label
                 float left
                 color #fff
@@ -129,7 +134,7 @@ body
                   text-align center
             
             &.play
-              bl 1px solid bot
+              bl 2px solid b50
               a.play
                 pad m*.75 - 2px m*1.5 - 2px
                 p
@@ -144,15 +149,17 @@ body
         width 640px
         height 320px
         pad 0
-        mar 0
+        mar -2px 0
         bg m80
-        p
-          display none
-          font 3em/320px sans
-          text-align center
-          color m100
+        .img
+          background url(../i/header.jpg) no-repeat
+          height 320px
+          width 640px
+          display block
+          box-shadow inset #000 0 0 m*2
 
       &.summary
+        box-shadow b25 0 -16px m
         header
           bg b25
           position relative

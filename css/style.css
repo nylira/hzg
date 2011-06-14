@@ -39,7 +39,7 @@ body{font-size:16px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica
 body #container{width:640px;min-height:960px;background:#000;}
 body #container header.app{display:none;}
 body #container header.app img{vertical-align:#191919 url("../i/texture.jpg")}
-body #container section{border-bottom:2px solid #000;background:#191919 url("../i/texture.jpg");margin:0 0 8px;-webkit-box-shadow:inset rgba(0,0,0,0.2) 0 -24px 32px;-moz-box-shadow:inset rgba(0,0,0,0.2) 0 -24px 32px;-o-box-shadow:inset rgba(0,0,0,0.2) 0 -24px 32px;box-shadow:inset rgba(0,0,0,0.2) 0 -24px 32px;}
+body #container section{background:#191919 url("../i/texture.jpg");margin:0 0 8px;-webkit-box-shadow:inset rgba(0,0,0,0.2) 0 -24px 32px;-moz-box-shadow:inset rgba(0,0,0,0.2) 0 -24px 32px;-o-box-shadow:inset rgba(0,0,0,0.2) 0 -24px 32px;box-shadow:inset rgba(0,0,0,0.2) 0 -24px 32px;}
 body #container section header{padding:32px 0;zoom:1;}
 body #container section header:before,body #container section header:after{content:"\0020";display:block;height:0;overflow:hidden}
 body #container section header:after{clear:both}
@@ -54,19 +54,21 @@ body #container section header menu ul li:not(:first-of-type){border-left:2px so
 body #container section header menu ul li a{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;padding:0 16px;width:80px;display:block;font:bold 150% "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;line-height:37.6px;height:48px;color:#999}
 body #container section .content{padding:0 32px 32px;}
 body #container section .content p{padding:0 0 32px}
-body #container section.menu.actions{padding:0;}
+body #container section.menu.actions{padding:0;margin:0;-webkit-box-shadow:rgba(0,0,0,0.35) 0 16px 16px;-moz-box-shadow:rgba(0,0,0,0.35) 0 16px 16px;-o-box-shadow:rgba(0,0,0,0.35) 0 16px 16px;box-shadow:rgba(0,0,0,0.35) 0 16px 16px;position:relative;z-index:100;border-bottom:2px solid rgba(255,255,255,0.1);}
 body #container section.menu.actions ul li{display:inline-block;padding:16px 32px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;width:50%;color:#1763cf;font-weight:bold;}
+body #container section.menu.actions ul li.checkbox{border-right:2px solid rgba(255,255,255,0.07);}
 body #container section.menu.actions ul li.checkbox label{float:left;color:#fff}
 body #container section.menu.actions ul li.checkbox .checkbox{float:right;margin:4px 0;height:24px;width:24px;border:2px solid rgba(255,255,255,0.5);}
 body #container section.menu.actions ul li.checkbox .checkbox:after{content:"\2713";display:block;line-height:24px;color:#fff;width:24px;text-align:center}
-body #container section.menu.actions ul li.play{border-left:1px solid #000;}
+body #container section.menu.actions ul li.play{border-left:2px solid rgba(0,0,0,0.5);}
 body #container section.menu.actions ul li.play a.play{padding:10px 22px;}
 body #container section.menu.actions ul li.play a.play p{color:#fff;}
 body #container section.menu.actions ul li.play a.play p.verb{float:left}
 body #container section.menu.actions ul li.play a.play p.price{float:right;}
 body #container section.menu.actions ul li.play a.play p.price .currency{color:rgba(255,255,255,0.6)}
-body #container section.banner{width:640px;height:320px;padding:0;margin:0;background:#505050;}
-body #container section.banner p{display:none;font:3em/320px "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;color:#646464}
+body #container section.banner{width:640px;height:320px;padding:0;margin:-2px 0;background:#505050;}
+body #container section.banner .img{background:url("../i/header.jpg") no-repeat;height:320px;width:640px;display:block;-webkit-box-shadow:inset #000 0 0 32px;-moz-box-shadow:inset #000 0 0 32px;-o-box-shadow:inset #000 0 0 32px;box-shadow:inset #000 0 0 32px}
+body #container section.summary{-webkit-box-shadow:rgba(0,0,0,0.25) 0 -16px 16px;-moz-box-shadow:rgba(0,0,0,0.25) 0 -16px 16px;-o-box-shadow:rgba(0,0,0,0.25) 0 -16px 16px;box-shadow:rgba(0,0,0,0.25) 0 -16px 16px;}
 body #container section.summary header{background:rgba(0,0,0,0.25);position:relative;top:2px;-webkit-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-moz-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-o-box-shadow:rgba(0,0,0,0.3) 0 3px 10px;box-shadow:rgba(0,0,0,0.3) 0 3px 10px;-webkit-box-shadow:inset rgba(0,0,0,0.2) 0 0 32px;-moz-box-shadow:inset rgba(0,0,0,0.2) 0 0 32px;-o-box-shadow:inset rgba(0,0,0,0.2) 0 0 32px;box-shadow:inset rgba(0,0,0,0.2) 0 0 32px;}
 body #container section.summary header h1{float:left;font-weight:bold;color:#fff}
 body #container section.summary header .icon{float:right;height:64px;width:64px;margin-right:32px;-webkit-border-radius:.5em;-moz-border-radius:.5em;-o-border-radius:.5em;border-radius:.5em;position:relative;border-top:2px solid rgba(0,0,0,0.4);border-right:2px solid rgba(255,255,255,0.1);border-bottom:2px solid rgba(255,255,255,0.15);border-left:2px solid rgba(0,0,0,0.2);}
