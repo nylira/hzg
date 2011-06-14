@@ -50,7 +50,8 @@ body #container section header menu ul:before,body #container section header men
 body #container section header menu ul:after{clear:both}
 body #container section header menu ul li{float:left;}
 body #container section header menu ul li a{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;padding:0 16px;width:80px;display:block;font:bold 150% "Helvetica Neue",Arial,Helvetica,sans-serif;line-height:40px;height:48px}
-body #container section .content{padding:0 32px 32px}
+body #container section .content{padding:0 32px 32px;}
+body #container section .content p{padding:0 0 32px}
 body #container section.menu.actions{padding:0;}
 body #container section.menu.actions ul li{display:inline-block;padding:16px 32px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;width:50%;color:#1763cf;font-weight:bold;}
 body #container section.menu.actions ul li.checkbox label{float:left;color:#fff}
