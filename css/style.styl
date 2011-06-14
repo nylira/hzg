@@ -97,13 +97,8 @@ body
         p
           pad 0 0 m*2
 
-      &.menu.actions
-        pad 0
-        mar 0
-        box-shadow b35 0 16px m
-        position relative
-        z-index 100
-        bb 2px solid b20
+      &.actions
+        pad m*2
         ul
           li
             display inline-block
@@ -114,7 +109,7 @@ body
             fw bold
 
             &.checkbox
-              br 2px solid w7
+              border-radius m 0 0 m
               label
                 float left
                 color #fff
@@ -133,7 +128,7 @@ body
                   text-align center
             
             &.play
-              bl 2px solid b50
+              border-radius 0 m m 0
               a.play
                 pad m*.75 - 2px m*1.5 - 2px
                 p
