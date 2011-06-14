@@ -98,23 +98,13 @@ body
           pad 0 0 m*2
 
       
-      &.banner
-        width 640px
-        height 320px
-        pad 0
-        mar -2px 0
-        bg m80
-        .img
-          background url(../i/header2.jpg) no-repeat
-          height 320px
-          width 640px
-          display block
-          box-shadow inset #000 0 0 m*2
-
       &.main
         box-shadow b25 0 -16px m
+        bb 2px solid b20
+        mar 0
         header
           bg b25
+          background linear-gradient(top, b70, b25)
           position relative
           top 2px
           box-shadow b30 0 3px 10px
@@ -148,6 +138,7 @@ body
 
         menu.actions
           pad m
+          bb 2px solid b30
           ul
             border .2em solid b30
             border-radius m*1.2
@@ -197,7 +188,19 @@ body
                       .currency
                         color w60
                         text-shadow none
-     
+      &.banner
+        width 640px
+        height 320px
+        pad 0
+        mar -2px 0
+        bg m80
+        .img
+          background url(../i/header2.jpg) no-repeat
+          height 320px
+          width 640px
+          display block
+          box-shadow inset #000 0 0 m*2
+    
       &.stats
         ul
           clearfix()
